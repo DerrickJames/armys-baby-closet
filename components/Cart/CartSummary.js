@@ -19,6 +19,16 @@ function CartSummary({ success, products, handleCheckout }) {
     return (
         <>
             <Divider/>
+
+            <Segment color="red" clearing size="large">
+                <span style={{color: "#DB2828"}}>
+                    <strong>*Please use the following test credit card details for payment*</strong><Divider/>
+                    <strong>Card Number: &nbsp;</strong>4242 4242 4242 4242<br/>
+                    <strong>Expiry:  &nbsp;</strong>12/20<br/>
+                    <strong>CVV:  &nbsp;</strong>123
+                </span>
+            </Segment>
+
             <Segment clearing size="large">
                 <strong>Sub total: </strong> ${cartAmount}
                 <StripeCheckout
