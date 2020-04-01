@@ -1,0 +1,8 @@
+.next
+.now
+.DS_Store
+
+now.json
+next.config.js
+
+node_modules
